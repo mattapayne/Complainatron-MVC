@@ -1,0 +1,21 @@
+﻿@using Complainatron;
+@model dynamic
+@{
+    ViewBag.Title = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<h2>
+    View</h2>
+<div>
+    This is the view complaint view.
+    @Html.CanvasActionLink("Back", "Index", "Complaint")
+</div>
+@section OGTags
+{
+    <meta property="og:title" content="Complaint" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="@String.Format("{0}{1}", Constants.RootUrl, Url.Action("View", "Complaint", new { id = Model.Id }))" />
+    <meta property="og:image" content="@String.Format("{0}/Content/Images/angry_smiley.png", Constants.RootUrl)" />
+    <meta property="og:site_name" content="Complainatron" />
+    <meta property="fb:admins" content="546936213" />
+}

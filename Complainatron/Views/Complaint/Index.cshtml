@@ -1,0 +1,35 @@
+﻿@using Complainatron
+@using Complainatron.HtmlHelperExtensions
+
+@model Complainatron.Models.IndexViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+<div class="item">
+    <div id="avatar">
+        <img src="@Model.Me.PicureUrl" alt="Profile Picture" />
+    </div>
+    <div id="title">
+        <h1>@Model.Title</h1>
+    </div>
+    <div class="clear"></div>
+    @Html.Action("Index", "Tag")
+</div>
+<div id="complaints">
+    @if (Model.Complaints.Any())
+    {
+        foreach (var complaint in Model.Complaints)
+        {
+            Html.RenderPartial("_Complaint", complaint);
+        }
+        <div class="pager">
+            @Html.FacebookPager(Model.Complaints.PageSize, Model.Complaints.PageNumber, Model.Complaints.TotalItemCount)
+        </div>
+    }
+    else
+    {
+        <div class="item">
+            There are no complaints!</div>
+    }
+</div>
+@Html.HiddenFor(m => m.TagListUrl)

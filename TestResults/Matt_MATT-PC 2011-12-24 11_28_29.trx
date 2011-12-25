@@ -1,0 +1,325 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="1275dfd2-e908-44ec-acbe-b05eed23bf9e" name="Matt@MATT-PC 2011-12-24 11:28:29" runUser="Matt-PC\Matt" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="1b452438-30ba-4160-930a-f044ea6d5cef">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Matt_MATT-PC 2011-12-24 11_28_29">
+      <DeploymentItem filename="C:\Code\Complainatron3\Complainatron\bin\Complainatron.dll" />
+      <DeploymentItem filename="C:\Code\Complainatron3\packages\FluentAssertions.1.6.0\Lib\net40\FluentAssertions.dll" />
+      <DeploymentItem filename="C:\Code\Complainatron3\Complainatron.Domain\bin\Debug\Complainatron.Domain.dll" />
+      <DeploymentItem filename="C:\Code\Complainatron3\packages\Castle.Core.2.5.2\lib\NET35\Castle.Core.dll" />
+      <DeploymentItem filename="C:\Code\Complainatron3\Complainatron.Core\bin\Debug\Complainatron.Core.dll" />
+      <DeploymentItem filename="C:\Code\Complainatron3\packages\FakeItEasy.1.7.4257.42\lib\NET40\FakeItEasy.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2011-12-24T11:28:29.4860458-08:00" queuing="2011-12-24T11:28:29.5400489-08:00" start="2011-12-24T11:28:29.5580499-08:00" finish="2011-12-24T11:28:30.9251281-08:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="28" executed="28" passed="27" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="It_should_have_a_collection_of_friends_as_the_views_model" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="f182e86d-440a-114e-75b8-405a96928ec7">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Index Action" />
+      </TestCategory>
+      <Execution id="e48bc894-9cb4-4221-9cdf-ce69ad640268" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.FriendsControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_have_a_collection_of_friends_as_the_views_model" />
+    </UnitTest>
+    <UnitTest name="It_should_throw_an_exception_if_complaint_service_is_null" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="068afdfa-bec9-e854-d1ae-8a3613a6566c">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Creation" />
+      </TestCategory>
+      <Execution id="71e8184e-55e1-4414-8c38-bb5f51e4352e" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.MapControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_throw_an_exception_if_complaint_service_is_null" />
+    </UnitTest>
+    <UnitTest name="It_should_ask_the_tag_service_to_get_the_requested_tag" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="d1b01a50-f114-c36e-df25-5ce88648af81">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Tag Action" />
+      </TestCategory>
+      <Execution id="c2568e9d-1b5a-4c99-b10c-1509c2c8b1f3" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.ComplaintControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_ask_the_tag_service_to_get_the_requested_tag" />
+    </UnitTest>
+    <UnitTest name="It_should_throw_an_exception_if_tag_service_is_null" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="7e059270-f99e-7f0c-944d-a1420e836093">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Creation" />
+      </TestCategory>
+      <Execution id="dd3cd054-fb2e-4393-9e02-570852bbe4cb" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.ChartControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_throw_an_exception_if_tag_service_is_null" />
+    </UnitTest>
+    <UnitTest name="It_should_return_a_partial_view" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="7472235a-07a1-64be-c16f-018bc1be6c02">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Index Action" />
+      </TestCategory>
+      <Execution id="8c2721ab-017d-45c8-b19d-6b9aa02e7170" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.FriendsControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_return_a_partial_view" />
+    </UnitTest>
+    <UnitTest name="It_should_throw_an_exception_if_complaint_builder_is_null" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="c7ea3ecb-50f5-2712-8aca-008c0a2be236">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Creation" />
+      </TestCategory>
+      <Execution id="1167c775-7a9d-4405-b028-3c825a9387e5" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.ComplaintControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_throw_an_exception_if_complaint_builder_is_null" />
+    </UnitTest>
+    <UnitTest name="It_should_throw_an_exception_if_tag_service_is_null" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="cc8fd6f1-60f9-9983-5acc-e6782323e931">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Creation" />
+      </TestCategory>
+      <Execution id="99fc24fb-0573-4e36-859d-736761dca35b" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.TagControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_throw_an_exception_if_tag_service_is_null" />
+    </UnitTest>
+    <UnitTest name="It_should_return_a_partial_view_named__about" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="74ad58ca-8037-4542-e734-2d75fa9b27a1">
+      <TestCategory>
+        <TestCategoryItem TestCategory="About Action" />
+      </TestCategory>
+      <Execution id="bea3809b-aef6-4a63-8970-253a6cb7c5a5" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.MainControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_return_a_partial_view_named__about" />
+    </UnitTest>
+    <UnitTest name="It_should_throw_an_exception_if_facebook_service_is_null" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="8ca0dd94-8d00-3681-7e7b-bcdc49182639">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Creation" />
+      </TestCategory>
+      <Execution id="c0b265b3-deda-4b9c-91aa-f962ac57f23b" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.AbstractFacebookControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_throw_an_exception_if_facebook_service_is_null" />
+    </UnitTest>
+    <UnitTest name="It_should_throw_an_exception_if_logging_service_is_null" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="7a74fccc-3a78-7dd5-a25a-fb73b8f8d4d7">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Creation" />
+      </TestCategory>
+      <Execution id="1f6ff2a6-b18f-46e9-92c0-8ff6b9a2e3d6" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.AbstractFacebookControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_throw_an_exception_if_logging_service_is_null" />
+    </UnitTest>
+    <UnitTest name="It_should_use_the_tag_builder_to_create_a_list_of_view_models" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="43a58456-2a87-37f5-f26d-3bea5dd5f2eb">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Index Action" />
+      </TestCategory>
+      <Execution id="6d3d1753-c0cb-4024-a500-cecf6d140587" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.TagControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_use_the_tag_builder_to_create_a_list_of_view_models" />
+    </UnitTest>
+    <UnitTest name="It_should_throw_an_exception_if_tag_service_is_null" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="b6a7185e-c355-1a77-1427-f2388d0cf302">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Creation" />
+      </TestCategory>
+      <Execution id="7eba39aa-1cb8-4f63-9da8-20fdfec7a0b3" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.ComplaintControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_throw_an_exception_if_tag_service_is_null" />
+    </UnitTest>
+    <UnitTest name="It_should_return_a_view" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="0f054cb8-6cbe-dd4c-c48e-c6047588a073">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Index Action" />
+      </TestCategory>
+      <Execution id="113bf435-028a-44ce-bcb2-9826b122fc95" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.MapControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_return_a_view" />
+    </UnitTest>
+    <UnitTest name="It_should_have_a_chart_data_view_model_in_its_view" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="1e9e7b51-057d-9149-3fb6-f9208fa86207">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Index Action" />
+      </TestCategory>
+      <Execution id="d78b6312-99dc-4870-b7e9-7931ffd00b1e" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.MapControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_have_a_chart_data_view_model_in_its_view" />
+    </UnitTest>
+    <UnitTest name="It_should_return_a_partial_view" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="3d18a9ac-f9a8-bfcf-81d2-44c90128be9c">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Index Action" />
+      </TestCategory>
+      <Execution id="e693f5b6-90ee-4b6f-b216-6f6db599809c" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.TagControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_return_a_partial_view" />
+    </UnitTest>
+    <UnitTest name="It_should_ask_the_complaint_service_for_all_complaints" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="7fa73dbd-de6d-0ac1-9c78-9efc7a619388">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Index Action" />
+      </TestCategory>
+      <Execution id="5d6d34d3-cabe-4f23-a2f4-68569edab6a5" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.MapControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_ask_the_complaint_service_for_all_complaints" />
+    </UnitTest>
+    <UnitTest name="It_should_return_a_view" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="f0690b77-6da3-dfa0-d405-007e7fb12845">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Index Action" />
+      </TestCategory>
+      <Execution id="17506f96-9394-4f5b-ae91-03106a1960cf" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.ChartControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_return_a_view" />
+    </UnitTest>
+    <UnitTest name="It_should_return_a_partial_view" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="10f84829-6344-db79-b0e9-ea013eb2f716">
+      <TestCategory>
+        <TestCategoryItem TestCategory="About Action" />
+      </TestCategory>
+      <Execution id="08a152e7-92a6-4223-84e9-b4d1d92eed8b" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.MainControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_return_a_partial_view" />
+    </UnitTest>
+    <UnitTest name="It_should_ask_the_service_to_get_all_tags_with_their_respective_counts" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="3b6beb09-33bf-2a5c-6864-647e66c1e652">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Index Action" />
+      </TestCategory>
+      <Execution id="493bfb07-3598-4ca6-8a4d-14a8ddc7fad9" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.ChartControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_ask_the_service_to_get_all_tags_with_their_respective_counts" />
+    </UnitTest>
+    <UnitTest name="It_should_throw_an_exception_if_user_service_is_null" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="bf31f7f0-a2a0-4bd2-dd65-6ece24083ee4">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Creation" />
+      </TestCategory>
+      <Execution id="18ba3a34-c7e4-4893-8183-fcd049f1875b" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.ComplaintControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_throw_an_exception_if_user_service_is_null" />
+    </UnitTest>
+    <UnitTest name="It_should_throw_an_exception_if_complaint_severity_service_is_null" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="a2fc997c-f0ad-8f43-71b9-befe4e308a8b">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Creation" />
+      </TestCategory>
+      <Execution id="2fafdceb-c5e9-45af-98f3-90eb90c7000d" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.ComplaintControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_throw_an_exception_if_complaint_severity_service_is_null" />
+    </UnitTest>
+    <UnitTest name="It_should_throw_an_exception_if_tag_builder_is_null" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="2283bcaa-a915-bbc4-9f2a-9f1e92e364a5">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Creation" />
+      </TestCategory>
+      <Execution id="cde13200-719c-4089-86aa-51296bf08fbb" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.TagControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_throw_an_exception_if_tag_builder_is_null" />
+    </UnitTest>
+    <UnitTest name="It_should_return_a_partial_view_called__index" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="e69681b7-cdaa-317d-ccd1-7c7c5073cf4c">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Index Action" />
+      </TestCategory>
+      <Execution id="5c4fee7c-7745-41c3-9369-cedddbee6f5b" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.FriendsControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_return_a_partial_view_called__index" />
+    </UnitTest>
+    <UnitTest name="It_should_throw_an_exception_if_complaint_service_is_null" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="10dd6907-5141-cb42-4165-9b7b7c5df640">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Creation" />
+      </TestCategory>
+      <Execution id="fa7b11fd-7d68-4df9-a014-00962b4aada3" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.ComplaintControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_throw_an_exception_if_complaint_service_is_null" />
+    </UnitTest>
+    <UnitTest name="It_should_ask_the_facebook_service_for_a_list_of_friends" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="9b34144b-af57-82ac-232c-05f31ac3f84e">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Index Action" />
+      </TestCategory>
+      <Execution id="99cd31c7-4e9b-4fcf-9157-22add09ddefe" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.FriendsControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_ask_the_facebook_service_for_a_list_of_friends" />
+    </UnitTest>
+    <UnitTest name="It_should_throw_an_exception_if_tag_builder_is_null" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="41f458f2-f333-8429-3a9d-5aade813bade">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Creation" />
+      </TestCategory>
+      <Execution id="aa04f0de-241f-4ddf-9b19-7292177e97a0" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.ComplaintControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_throw_an_exception_if_tag_builder_is_null" />
+    </UnitTest>
+    <UnitTest name="It_should_have_a_chart_data_view_model_in_its_view" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="a1efffce-f557-40c3-1c11-2522b30a2b71">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Index Action" />
+      </TestCategory>
+      <Execution id="ad6e96cb-e8d3-43ef-ac57-3646ef4d5d4b" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.ChartControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_have_a_chart_data_view_model_in_its_view" />
+    </UnitTest>
+    <UnitTest name="It_should_ask_the_tag_service_for_all_tags" storage="c:\code\complainatron3\tests.complainatron\bin\debug\tests.complainatron.dll" id="8778246f-bfa9-c2d1-b343-6fd2e66339d0">
+      <TestCategory>
+        <TestCategoryItem TestCategory="Index Action" />
+      </TestCategory>
+      <Execution id="8d2024dc-38e6-4aee-87ef-ca67e4fa0306" />
+      <TestMethod codeBase="C:/Code/Complainatron3/Tests.Complainatron/bin/Debug/Tests.Complainatron.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="Tests.Complainatron.TagControllerTests, Tests.Complainatron, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="It_should_ask_the_tag_service_for_all_tags" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="068afdfa-bec9-e854-d1ae-8a3613a6566c" executionId="71e8184e-55e1-4414-8c38-bb5f51e4352e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0f054cb8-6cbe-dd4c-c48e-c6047588a073" executionId="113bf435-028a-44ce-bcb2-9826b122fc95" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="10dd6907-5141-cb42-4165-9b7b7c5df640" executionId="fa7b11fd-7d68-4df9-a014-00962b4aada3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="10f84829-6344-db79-b0e9-ea013eb2f716" executionId="08a152e7-92a6-4223-84e9-b4d1d92eed8b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1e9e7b51-057d-9149-3fb6-f9208fa86207" executionId="d78b6312-99dc-4870-b7e9-7931ffd00b1e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2283bcaa-a915-bbc4-9f2a-9f1e92e364a5" executionId="cde13200-719c-4089-86aa-51296bf08fbb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3b6beb09-33bf-2a5c-6864-647e66c1e652" executionId="493bfb07-3598-4ca6-8a4d-14a8ddc7fad9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3d18a9ac-f9a8-bfcf-81d2-44c90128be9c" executionId="e693f5b6-90ee-4b6f-b216-6f6db599809c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="41f458f2-f333-8429-3a9d-5aade813bade" executionId="aa04f0de-241f-4ddf-9b19-7292177e97a0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="43a58456-2a87-37f5-f26d-3bea5dd5f2eb" executionId="6d3d1753-c0cb-4024-a500-cecf6d140587" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7472235a-07a1-64be-c16f-018bc1be6c02" executionId="8c2721ab-017d-45c8-b19d-6b9aa02e7170" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="74ad58ca-8037-4542-e734-2d75fa9b27a1" executionId="bea3809b-aef6-4a63-8970-253a6cb7c5a5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7a74fccc-3a78-7dd5-a25a-fb73b8f8d4d7" executionId="1f6ff2a6-b18f-46e9-92c0-8ff6b9a2e3d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7e059270-f99e-7f0c-944d-a1420e836093" executionId="dd3cd054-fb2e-4393-9e02-570852bbe4cb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7fa73dbd-de6d-0ac1-9c78-9efc7a619388" executionId="5d6d34d3-cabe-4f23-a2f4-68569edab6a5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8778246f-bfa9-c2d1-b343-6fd2e66339d0" executionId="8d2024dc-38e6-4aee-87ef-ca67e4fa0306" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8ca0dd94-8d00-3681-7e7b-bcdc49182639" executionId="c0b265b3-deda-4b9c-91aa-f962ac57f23b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9b34144b-af57-82ac-232c-05f31ac3f84e" executionId="99cd31c7-4e9b-4fcf-9157-22add09ddefe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a1efffce-f557-40c3-1c11-2522b30a2b71" executionId="ad6e96cb-e8d3-43ef-ac57-3646ef4d5d4b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2fc997c-f0ad-8f43-71b9-befe4e308a8b" executionId="2fafdceb-c5e9-45af-98f3-90eb90c7000d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b6a7185e-c355-1a77-1427-f2388d0cf302" executionId="7eba39aa-1cb8-4f63-9da8-20fdfec7a0b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bf31f7f0-a2a0-4bd2-dd65-6ece24083ee4" executionId="18ba3a34-c7e4-4893-8183-fcd049f1875b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c7ea3ecb-50f5-2712-8aca-008c0a2be236" executionId="1167c775-7a9d-4405-b028-3c825a9387e5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cc8fd6f1-60f9-9983-5acc-e6782323e931" executionId="99fc24fb-0573-4e36-859d-736761dca35b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d1b01a50-f114-c36e-df25-5ce88648af81" executionId="c2568e9d-1b5a-4c99-b10c-1509c2c8b1f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e69681b7-cdaa-317d-ccd1-7c7c5073cf4c" executionId="5c4fee7c-7745-41c3-9369-cedddbee6f5b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f0690b77-6da3-dfa0-d405-007e7fb12845" executionId="17506f96-9394-4f5b-ae91-03106a1960cf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f182e86d-440a-114e-75b8-405a96928ec7" executionId="e48bc894-9cb4-4221-9cdf-ce69ad640268" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="71e8184e-55e1-4414-8c38-bb5f51e4352e" testId="068afdfa-bec9-e854-d1ae-8a3613a6566c" testName="It_should_throw_an_exception_if_complaint_service_is_null" computerName="MATT-PC" duration="00:00:00.5095064" startTime="2011-12-24T11:28:29.5810512-08:00" endTime="2011-12-24T11:28:30.3800969-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="71e8184e-55e1-4414-8c38-bb5f51e4352e">
+    </UnitTestResult>
+    <UnitTestResult executionId="113bf435-028a-44ce-bcb2-9826b122fc95" testId="0f054cb8-6cbe-dd4c-c48e-c6047588a073" testName="It_should_return_a_view" computerName="MATT-PC" duration="00:00:00.0392068" startTime="2011-12-24T11:28:30.3830971-08:00" endTime="2011-12-24T11:28:30.4280997-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="113bf435-028a-44ce-bcb2-9826b122fc95">
+    </UnitTestResult>
+    <UnitTestResult executionId="fa7b11fd-7d68-4df9-a014-00962b4aada3" testId="10dd6907-5141-cb42-4165-9b7b7c5df640" testName="It_should_throw_an_exception_if_complaint_service_is_null" computerName="MATT-PC" duration="00:00:00.0601279" startTime="2011-12-24T11:28:30.4300998-08:00" endTime="2011-12-24T11:28:30.4961036-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fa7b11fd-7d68-4df9-a014-00962b4aada3">
+    </UnitTestResult>
+    <UnitTestResult executionId="08a152e7-92a6-4223-84e9-b4d1d92eed8b" testId="10f84829-6344-db79-b0e9-ea013eb2f716" testName="It_should_return_a_partial_view" computerName="MATT-PC" duration="00:00:00.0005847" startTime="2011-12-24T11:28:30.4981037-08:00" endTime="2011-12-24T11:28:30.5031040-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="08a152e7-92a6-4223-84e9-b4d1d92eed8b">
+    </UnitTestResult>
+    <UnitTestResult executionId="d78b6312-99dc-4870-b7e9-7931ffd00b1e" testId="1e9e7b51-057d-9149-3fb6-f9208fa86207" testName="It_should_have_a_chart_data_view_model_in_its_view" computerName="MATT-PC" duration="00:00:00.0292552" startTime="2011-12-24T11:28:30.5071042-08:00" endTime="2011-12-24T11:28:30.5391060-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d78b6312-99dc-4870-b7e9-7931ffd00b1e">
+    </UnitTestResult>
+    <UnitTestResult executionId="cde13200-719c-4089-86aa-51296bf08fbb" testId="2283bcaa-a915-bbc4-9f2a-9f1e92e364a5" testName="It_should_throw_an_exception_if_tag_builder_is_null" computerName="MATT-PC" duration="00:00:00.0011160" startTime="2011-12-24T11:28:30.5421062-08:00" endTime="2011-12-24T11:28:30.5481065-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cde13200-719c-4089-86aa-51296bf08fbb">
+    </UnitTestResult>
+    <UnitTestResult executionId="493bfb07-3598-4ca6-8a4d-14a8ddc7fad9" testId="3b6beb09-33bf-2a5c-6864-647e66c1e652" testName="It_should_ask_the_service_to_get_all_tags_with_their_respective_counts" computerName="MATT-PC" duration="00:00:00.0312249" startTime="2011-12-24T11:28:30.5501067-08:00" endTime="2011-12-24T11:28:30.5861087-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="493bfb07-3598-4ca6-8a4d-14a8ddc7fad9">
+    </UnitTestResult>
+    <UnitTestResult executionId="e693f5b6-90ee-4b6f-b216-6f6db599809c" testId="3d18a9ac-f9a8-bfcf-81d2-44c90128be9c" testName="It_should_return_a_partial_view" computerName="MATT-PC" duration="00:00:00.0176608" startTime="2011-12-24T11:28:30.5891089-08:00" endTime="2011-12-24T11:28:30.6101101-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e693f5b6-90ee-4b6f-b216-6f6db599809c">
+    </UnitTestResult>
+    <UnitTestResult executionId="aa04f0de-241f-4ddf-9b19-7292177e97a0" testId="41f458f2-f333-8429-3a9d-5aade813bade" testName="It_should_throw_an_exception_if_tag_builder_is_null" computerName="MATT-PC" duration="00:00:00.0008162" startTime="2011-12-24T11:28:30.6121102-08:00" endTime="2011-12-24T11:28:30.6181105-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="aa04f0de-241f-4ddf-9b19-7292177e97a0">
+    </UnitTestResult>
+    <UnitTestResult executionId="6d3d1753-c0cb-4024-a500-cecf6d140587" testId="43a58456-2a87-37f5-f26d-3bea5dd5f2eb" testName="It_should_use_the_tag_builder_to_create_a_list_of_view_models" computerName="MATT-PC" duration="00:00:00.0287999" startTime="2011-12-24T11:28:30.6191106-08:00" endTime="2011-12-24T11:28:30.6531125-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d3d1753-c0cb-4024-a500-cecf6d140587">
+    </UnitTestResult>
+    <UnitTestResult executionId="8c2721ab-017d-45c8-b19d-6b9aa02e7170" testId="7472235a-07a1-64be-c16f-018bc1be6c02" testName="It_should_return_a_partial_view" computerName="MATT-PC" duration="00:00:00.0099285" startTime="2011-12-24T11:28:30.6591129-08:00" endTime="2011-12-24T11:28:30.6761139-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c2721ab-017d-45c8-b19d-6b9aa02e7170">
+    </UnitTestResult>
+    <UnitTestResult executionId="bea3809b-aef6-4a63-8970-253a6cb7c5a5" testId="74ad58ca-8037-4542-e734-2d75fa9b27a1" testName="It_should_return_a_partial_view_named__about" computerName="MATT-PC" duration="00:00:00.0023946" startTime="2011-12-24T11:28:30.6801141-08:00" endTime="2011-12-24T11:28:30.6861144-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bea3809b-aef6-4a63-8970-253a6cb7c5a5">
+    </UnitTestResult>
+    <UnitTestResult executionId="1f6ff2a6-b18f-46e9-92c0-8ff6b9a2e3d6" testId="7a74fccc-3a78-7dd5-a25a-fb73b8f8d4d7" testName="It_should_throw_an_exception_if_logging_service_is_null" computerName="MATT-PC" duration="00:00:00.0007276" startTime="2011-12-24T11:28:30.6901147-08:00" endTime="2011-12-24T11:28:30.6941149-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f6ff2a6-b18f-46e9-92c0-8ff6b9a2e3d6">
+    </UnitTestResult>
+    <UnitTestResult executionId="dd3cd054-fb2e-4393-9e02-570852bbe4cb" testId="7e059270-f99e-7f0c-944d-a1420e836093" testName="It_should_throw_an_exception_if_tag_service_is_null" computerName="MATT-PC" duration="00:00:00.0005530" startTime="2011-12-24T11:28:30.6961150-08:00" endTime="2011-12-24T11:28:30.7011153-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dd3cd054-fb2e-4393-9e02-570852bbe4cb">
+    </UnitTestResult>
+    <UnitTestResult executionId="5d6d34d3-cabe-4f23-a2f4-68569edab6a5" testId="7fa73dbd-de6d-0ac1-9c78-9efc7a619388" testName="It_should_ask_the_complaint_service_for_all_complaints" computerName="MATT-PC" duration="00:00:00.0029173" startTime="2011-12-24T11:28:30.7031154-08:00" endTime="2011-12-24T11:28:30.7111159-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5d6d34d3-cabe-4f23-a2f4-68569edab6a5">
+    </UnitTestResult>
+    <UnitTestResult executionId="8d2024dc-38e6-4aee-87ef-ca67e4fa0306" testId="8778246f-bfa9-c2d1-b343-6fd2e66339d0" testName="It_should_ask_the_tag_service_for_all_tags" computerName="MATT-PC" duration="00:00:00.0024837" startTime="2011-12-24T11:28:30.7131160-08:00" endTime="2011-12-24T11:28:30.7201164-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8d2024dc-38e6-4aee-87ef-ca67e4fa0306">
+    </UnitTestResult>
+    <UnitTestResult executionId="c0b265b3-deda-4b9c-91aa-f962ac57f23b" testId="8ca0dd94-8d00-3681-7e7b-bcdc49182639" testName="It_should_throw_an_exception_if_facebook_service_is_null" computerName="MATT-PC" duration="00:00:00.0005740" startTime="2011-12-24T11:28:30.7221165-08:00" endTime="2011-12-24T11:28:30.7281168-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c0b265b3-deda-4b9c-91aa-f962ac57f23b">
+    </UnitTestResult>
+    <UnitTestResult executionId="99cd31c7-4e9b-4fcf-9157-22add09ddefe" testId="9b34144b-af57-82ac-232c-05f31ac3f84e" testName="It_should_ask_the_facebook_service_for_a_list_of_friends" computerName="MATT-PC" duration="00:00:00.0027535" startTime="2011-12-24T11:28:30.7301170-08:00" endTime="2011-12-24T11:28:30.7371174-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="99cd31c7-4e9b-4fcf-9157-22add09ddefe">
+    </UnitTestResult>
+    <UnitTestResult executionId="ad6e96cb-e8d3-43ef-ac57-3646ef4d5d4b" testId="a1efffce-f557-40c3-1c11-2522b30a2b71" testName="It_should_have_a_chart_data_view_model_in_its_view" computerName="MATT-PC" duration="00:00:00.0028139" startTime="2011-12-24T11:28:30.7391175-08:00" endTime="2011-12-24T11:28:30.7471179-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ad6e96cb-e8d3-43ef-ac57-3646ef4d5d4b">
+    </UnitTestResult>
+    <UnitTestResult executionId="2fafdceb-c5e9-45af-98f3-90eb90c7000d" testId="a2fc997c-f0ad-8f43-71b9-befe4e308a8b" testName="It_should_throw_an_exception_if_complaint_severity_service_is_null" computerName="MATT-PC" duration="00:00:00.0007719" startTime="2011-12-24T11:28:30.7491180-08:00" endTime="2011-12-24T11:28:30.7541183-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2fafdceb-c5e9-45af-98f3-90eb90c7000d">
+    </UnitTestResult>
+    <UnitTestResult executionId="7eba39aa-1cb8-4f63-9da8-20fdfec7a0b3" testId="b6a7185e-c355-1a77-1427-f2388d0cf302" testName="It_should_throw_an_exception_if_tag_service_is_null" computerName="MATT-PC" duration="00:00:00.0007460" startTime="2011-12-24T11:28:30.7561184-08:00" endTime="2011-12-24T11:28:30.7621188-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7eba39aa-1cb8-4f63-9da8-20fdfec7a0b3">
+    </UnitTestResult>
+    <UnitTestResult executionId="18ba3a34-c7e4-4893-8183-fcd049f1875b" testId="bf31f7f0-a2a0-4bd2-dd65-6ece24083ee4" testName="It_should_throw_an_exception_if_user_service_is_null" computerName="MATT-PC" duration="00:00:00.0007662" startTime="2011-12-24T11:28:30.7641189-08:00" endTime="2011-12-24T11:28:30.7691192-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="18ba3a34-c7e4-4893-8183-fcd049f1875b">
+    </UnitTestResult>
+    <UnitTestResult executionId="1167c775-7a9d-4405-b028-3c825a9387e5" testId="c7ea3ecb-50f5-2712-8aca-008c0a2be236" testName="It_should_throw_an_exception_if_complaint_builder_is_null" computerName="MATT-PC" duration="00:00:00.0007855" startTime="2011-12-24T11:28:30.7711193-08:00" endTime="2011-12-24T11:28:30.7771196-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1167c775-7a9d-4405-b028-3c825a9387e5">
+    </UnitTestResult>
+    <UnitTestResult executionId="99fc24fb-0573-4e36-859d-736761dca35b" testId="cc8fd6f1-60f9-9983-5acc-e6782323e931" testName="It_should_throw_an_exception_if_tag_service_is_null" computerName="MATT-PC" duration="00:00:00.0005916" startTime="2011-12-24T11:28:30.7801198-08:00" endTime="2011-12-24T11:28:30.7841200-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="99fc24fb-0573-4e36-859d-736761dca35b">
+    </UnitTestResult>
+    <UnitTestResult executionId="c2568e9d-1b5a-4c99-b10c-1509c2c8b1f3" testId="d1b01a50-f114-c36e-df25-5ce88648af81" testName="It_should_ask_the_tag_service_to_get_the_requested_tag" computerName="MATT-PC" duration="00:00:00.0772533" startTime="2011-12-24T11:28:30.7881203-08:00" endTime="2011-12-24T11:28:30.8681248-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c2568e9d-1b5a-4c99-b10c-1509c2c8b1f3">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method Tests.Complainatron.ComplaintControllerTests.It_should_ask_the_tag_service_to_get_the_requested_tag threw exception: 
+System.ArgumentOutOfRangeException: Value can not be less than 1.
+Parameter name: pageSize</Message>
+          <StackTrace>    at MvcPaging.PagedList`1..ctor(IQueryable`1 source, Int32 index, Int32 pageSize, Nullable`1 totalCount)
+   at MvcPaging.PagedList`1..ctor(IEnumerable`1 source, Int32 index, Int32 pageSize, Nullable`1 totalCount)
+   at Complainatron.Controllers.ComplaintController.Tag(Guid id, PagingInformation pagingInformation) in C:\Code\Complainatron3\Complainatron\Controllers\ComplaintController.cs:line 84
+   at Tests.Complainatron.ComplaintControllerTests.It_should_ask_the_tag_service_to_get_the_requested_tag() in C:\Code\Complainatron3\Tests.Complainatron\ComplaintControllerTests.cs:line 113
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5c4fee7c-7745-41c3-9369-cedddbee6f5b" testId="e69681b7-cdaa-317d-ccd1-7c7c5073cf4c" testName="It_should_return_a_partial_view_called__index" computerName="MATT-PC" duration="00:00:00.0038441" startTime="2011-12-24T11:28:30.8701250-08:00" endTime="2011-12-24T11:28:30.8801255-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5c4fee7c-7745-41c3-9369-cedddbee6f5b">
+    </UnitTestResult>
+    <UnitTestResult executionId="17506f96-9394-4f5b-ae91-03106a1960cf" testId="f0690b77-6da3-dfa0-d405-007e7fb12845" testName="It_should_return_a_view" computerName="MATT-PC" duration="00:00:00.0006742" startTime="2011-12-24T11:28:30.8841258-08:00" endTime="2011-12-24T11:28:30.8881260-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="17506f96-9394-4f5b-ae91-03106a1960cf">
+    </UnitTestResult>
+    <UnitTestResult executionId="e48bc894-9cb4-4221-9cdf-ce69ad640268" testId="f182e86d-440a-114e-75b8-405a96928ec7" testName="It_should_have_a_collection_of_friends_as_the_views_model" computerName="MATT-PC" duration="00:00:00.0020711" startTime="2011-12-24T11:28:30.8921262-08:00" endTime="2011-12-24T11:28:30.8971265-08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e48bc894-9cb4-4221-9cdf-ce69ad640268">
+    </UnitTestResult>
+  </Results>
+</TestRun>

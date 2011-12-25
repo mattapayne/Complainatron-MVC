@@ -1,0 +1,31 @@
+﻿@using Complainatron
+@model Complainatron.Models.ComplaintViewModel
+<div class="item">
+    <div class="item-wrapper">
+        <div class="left">
+            <div class="complainer">
+                <a href="@Url.CanvasAction("Friend", "Complaint", new { id = Model.FacebookUserId })" target="_top" title="@Model.FacebookUserName"><img src="@Model.FacebookUserPhoto" alt="photo" /></a>
+                <br />
+                <strong>On: </strong>@Model.DateSubmitted
+            </div>
+            @if (Model.Tags.Any())
+            {
+                <div class="tags">
+                    <h2>
+                        Tags</h2>
+                    @foreach (var tag in Model.Tags)
+                    {
+                        <span class="tag">@Html.CanvasActionLink(tag.Name, "Tag", "Complaint", new { id = tag.Id }, null)</span><br />
+                    }
+                </div>
+            }
+        </div>
+        <div class="right">
+            <div class="complaint-text @Model.SeverityCssClass">@Model.ComplaintText</div>
+        </div>
+        <div class="clear">
+            <div class="fb-like" data-layout="button_count" data-send="false" data-width="500" data-show-faces="true" data-href="@String.Format("{0}{1}", Constants.RootUrl, @Url.Action("View", "Complaint", new { id = Model.Id }))">
+            </div>
+        </div>
+    </div>
+</div>

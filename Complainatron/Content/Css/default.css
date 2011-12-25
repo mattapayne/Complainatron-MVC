@@ -1,0 +1,284 @@
+/*#############################################################
+Name: Bright Pixel
+Date: 2006-05-07
+Author: Viktor Persson
+URL: http://www.arcsin.se
+
+Feel free to use and modify but please provide credits.
+#############################################################*/
+a
+{
+    color: #000;
+    text-decoration: none;
+}
+body
+{
+    background: #CCC url(../Images/bg.gif) repeat-y fixed bottom center;
+    color: #333;
+    margin: 20px 0;
+    text-align: center;
+    font: normal 0.6em sans-serif,Arial;
+}
+.gfx a
+{
+    background: #F5F5F5 url(../Images/bright_pixel.gif) no-repeat;
+    display: block;
+    height: 240px;
+}
+.header
+{
+    background: #FFF;
+    border-bottom: 1px solid #E5E5E5;
+    font: bold 2.6em Arial;
+    line-height: 3em;
+}
+.main
+{
+    background: #FFF;
+    border: 3px double #EEE;
+    border-color: #E4E4E4 #CFCFCF #CCC #CFCFCF;
+    margin: 20px auto 4px auto;
+    text-align: left;
+    width: 620px;
+}
+.menu a
+{
+    background: #EEE;
+    border-right: 1px solid #CECECE;
+    border-top: 1px solid #E5E5E5;
+    color: #888;
+    float: left;
+    padding-top: 4px;
+    width: 90px;
+    height: 36px;
+}
+.menu a span
+{
+    padding-left: 6px;
+}
+.menu a:hover
+{
+    background: #EEE url(../Images/bgmenu.gif) repeat-x;
+    color: #555;
+}
+.menu a#last
+{
+    width: 150px;
+    border-right: none;
+}
+.container
+{
+    margin: 10px;
+}
+.content
+{
+    background: #F5F5F5;
+    border-top: 1px solid #E5E5E5;
+    clear: both;
+}
+.content h1
+{
+    margin: 0;
+    font: bold 1.1em sans-serif,Arial;
+    color: #666;
+}
+.content p
+{
+    margin: 3px 0 6px;
+    color: #666;
+}
+.item
+{
+    background: #FCFCFC url(../Images/bgitem.gif) repeat-x;
+    padding: 10px;
+}
+.footer
+{
+    padding: 5px;
+    background: #F5F5F5;
+    color: #666;
+}
+
+.validation-summary-errors
+{
+    color: Red;
+}
+
+.validation-summary-errors ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#complain-screen
+{
+    text-align: left;
+}
+
+#complain-screen input[type=text], #complain-screen textarea
+{
+    width: 300px;
+}
+
+#complain-screen textarea
+{
+    height: 100px;
+}
+
+.item h1
+{
+    margin: 0 0 20px 0;
+    border: 1px solid #F5F5F5;
+}
+
+#LengthDisplay
+{
+    padding: 10px;
+    background-color: Yellow;
+}
+
+.left
+{
+    width: 30%;
+    float: left;
+    border-right: 1px solid #E5E5E5;
+    padding: 5px 2px 10px 0;
+}
+
+.right
+{
+    float: left;
+    padding: 5px 0 10px 10px;
+    width: 65%;
+    overflow: auto;
+    word-wrap: break-word;
+}
+
+.clear
+{
+    clear: both;
+    margin: 0;
+    padding: 0;
+}
+
+.complaint-text
+{
+    font-size: 16px;
+}
+
+.tags h2
+{
+    font-size: 10px;
+}
+
+.item-wrapper
+{
+    padding-bottom: 10px;
+}
+
+span.tag a
+{
+    color: Blue;
+}
+
+.complainer span a
+{
+    color: Blue;
+    cursor: pointer;
+}
+
+#existing-tags
+{
+    border: 1px solid Black;
+    background-color: #3B5998;
+    text-align: center;
+}
+
+span.existing-tag
+{
+    color: White;
+    cursor: pointer;
+    padding: 0 3px 0 0;
+}
+
+/* Pager */
+.pager
+{
+    margin: 8px 3px;
+    padding: 3px;
+    text-align: center;
+    width: 100%;
+}
+
+.pager .disabled
+{
+    border: 1px solid #ddd;
+    color: #999;
+    margin-top: 4px;
+    padding: 3px;
+    text-align: center;
+}
+
+.pager .current
+{
+    background-color: #6ea9bf;
+    border: 1px solid #6e99aa;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 4px;
+    padding: 3px 5px;
+    text-align: center;
+}
+
+.pager span, .pager a
+{
+    margin: 4px 3px;
+}
+
+.pager a
+{
+    border: 1px solid #aaa;
+    padding: 3px 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
+#avatar
+{
+    float: left;
+    margin-right: 40px;
+}
+
+#title
+{
+    float: left;
+    font-size: 20px;
+}
+
+.DamnAnnoyed
+{
+    background-color: Red;
+    color: White;
+}
+
+.MildlyAnnoyed
+{
+    background-color: Gray;
+    color: Black;
+}
+
+.ReallyPissed
+{
+    background-color: Purple;
+    color: White;
+}
+
+.complaint-text
+{
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    height: 120px;
+    padding: 5px;
+    text-align: center;
+}

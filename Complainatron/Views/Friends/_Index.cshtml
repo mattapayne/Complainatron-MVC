@@ -1,0 +1,21 @@
+﻿@using Complainatron
+@model IEnumerable<Complainatron.Core.DTOs.FacebookFriendDTO>
+<div id="friends">
+    <p>
+        Here are all of your friends that are using Complainatron. To view their complaints,
+        click on their picture.
+    </p>
+    @if (Model.Any())
+    {
+        foreach (var friend in Model)
+        {
+        <span class="friend"><a href="@Url.CanvasAction("Friend", "Complaint", new { id = friend.Id })" target="_top">
+            <img src="@friend.PictureUrl" alt="Profile Picture" title="@friend.Name" /></a>
+        </span>
+        }
+    }
+    else
+    {
+        <text>None of your friends are using Complainatron!</text>   
+    }
+</div>

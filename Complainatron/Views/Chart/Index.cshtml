@@ -1,0 +1,31 @@
+﻿@model Complainatron.Models.ChartModel
+           
+@{
+    Layout = "~/Views/Shared/_ChartLayout.cshtml";
+}
+
+@Html.Hidden("TagData", Model.ChartData)
+
+@section Header
+{
+    <script type="text/javascript">
+        google.load('visualization', '1.0', { 'packages': ['corechart'] });
+        google.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var json = $.parseJSON($("#TagData").val());
+
+            var data = new google.visualization.DataTable(json);
+
+            var options = {
+                width: 450, height: 450,
+                title: 'Tags'
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('chart'));
+            chart.draw(data, options);
+        }
+    </script>
+}
+
+<div id="chart" style="width:450px;height:450px;"></div>

@@ -1,0 +1,40 @@
+﻿@model Complainatron.Models.CreateComplaintViewModel
+<div id="complain-screen">
+    <h3>
+        Complain Away!</h3>
+    @if (Model.ExistingTags.Any())
+    {
+    <div id="existing-tags">
+        @foreach (var tag in Model.ExistingTags)
+        {
+            <span class="existing-tag">@tag.Name</span>
+        }   
+    </div>
+    }
+    @using (Html.BeginForm("Complain", "Complaint", FormMethod.Post, new { id = "complain-form" }))
+    {                                    
+        @Html.ValidationSummary()
+        @Html.FacebookSignedRequest()
+
+        <p>
+            @Html.LabelFor(m => m.Tags)<br />
+            @Html.EditorFor(m => m.Tags)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.ComplaintText)<br />
+            @Html.TextAreaFor(m => m.ComplaintText)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.SelectedComplaintSeverityId)
+            @Html.DropDownListFor(m => m.SelectedComplaintSeverityId, Model.Severities)
+        </p>
+        <p>
+            @Html.LabelFor(m => m.PublishToWall)
+            @Html.CheckBoxFor(m => m.PublishToWall)
+        </p>
+    }
+    <div id="LengthDisplay">
+       Remaining characters: 255
+    </div>
+</div>
+<script src="@Url.Content("~/Scripts/complaint/complain.js")" type="text/javascript"></script>

@@ -1,0 +1,44 @@
+﻿@model dynamic
+           
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@section HeaderContent
+{
+    <link href="@Url.Content("~/Content/home.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/home.js")" type="text/javascript"></script>
+}
+
+<div class="page">
+        <div id="header">
+            <div id="title">
+                <h1>
+                    Complainatron</h1>
+            </div>
+        </div>
+        <div id="main">
+            @foreach (var complaint in Model)
+            {
+            <div>
+			   <input type="hidden" id="id" name="id" value="@complaint.ComplaintId" />
+               @complaint.ComplaintText (Likes: @complaint.Likes) (Dislikes: @complaint.Dislikes)
+			   <a href="#" class="like">Like</a>
+			   <a href="#" class="dislike">Dislike</a>
+            </div>
+            }
+        </div>
+		<div>
+			@Html.ActionLink("Complain!!", "Complain", "Home")
+		</div>
+		<div id="map">
+			
+		</div>
+    </div>
+
+	<form id="like-form" action="/like" method="post">
+
+	</form>
+	<form id="dislike-form" action="/dislike" method="post">
+
+	</form>

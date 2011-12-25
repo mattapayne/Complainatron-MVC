@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Complainatron", "Complainatron\Complainatron.csproj", "{176615EB-D273-4254-8EDC-FB09AFF4F10C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Complainatron.Domain", "Complainatron.Domain\Complainatron.Domain.csproj", "{A93C401D-4223-4EE0-BF0C-5682BAC39105}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Complainatron.Services", "Complainatron.Services\Complainatron.Services.csproj", "{54B2EF20-DC68-4238-BF12-948BEA6C06F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Complainatron.Core", "Complainatron.Core\Complainatron.Core.csproj", "{D4D37743-76F7-40E3-9073-03A388573DFE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Complainatron.DataAccess.EntityFramework", "Complainatron.DataAccess.EntityFramework\Complainatron.DataAccess.EntityFramework.csproj", "{50AAF4A0-ABEE-42FB-9B53-58BFAF9504A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests.Complainatron", "Tests.Complainatron\Tests.Complainatron.csproj", "{3188D28C-2A70-495C-9D46-979F2207C868}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{2426D5F0-9E32-4226-A7F3-9F25A4B6C18A}"
+	ProjectSection(SolutionItems) = preProject
+		Complainatron.vsmdi = Complainatron.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = Complainatron.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{176615EB-D273-4254-8EDC-FB09AFF4F10C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{176615EB-D273-4254-8EDC-FB09AFF4F10C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{176615EB-D273-4254-8EDC-FB09AFF4F10C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{176615EB-D273-4254-8EDC-FB09AFF4F10C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A93C401D-4223-4EE0-BF0C-5682BAC39105}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A93C401D-4223-4EE0-BF0C-5682BAC39105}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A93C401D-4223-4EE0-BF0C-5682BAC39105}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A93C401D-4223-4EE0-BF0C-5682BAC39105}.Release|Any CPU.Build.0 = Release|Any CPU
+		{54B2EF20-DC68-4238-BF12-948BEA6C06F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54B2EF20-DC68-4238-BF12-948BEA6C06F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54B2EF20-DC68-4238-BF12-948BEA6C06F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54B2EF20-DC68-4238-BF12-948BEA6C06F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D4D37743-76F7-40E3-9073-03A388573DFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D4D37743-76F7-40E3-9073-03A388573DFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D4D37743-76F7-40E3-9073-03A388573DFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D4D37743-76F7-40E3-9073-03A388573DFE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50AAF4A0-ABEE-42FB-9B53-58BFAF9504A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50AAF4A0-ABEE-42FB-9B53-58BFAF9504A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50AAF4A0-ABEE-42FB-9B53-58BFAF9504A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50AAF4A0-ABEE-42FB-9B53-58BFAF9504A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3188D28C-2A70-495C-9D46-979F2207C868}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3188D28C-2A70-495C-9D46-979F2207C868}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3188D28C-2A70-495C-9D46-979F2207C868}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3188D28C-2A70-495C-9D46-979F2207C868}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
