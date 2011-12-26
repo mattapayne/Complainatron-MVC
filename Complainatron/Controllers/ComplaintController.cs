@@ -80,8 +80,7 @@ namespace Complainatron.Controllers
 
             var me = FacebookService.GetMe();
             var complaints = _complaintService.GetComplaintsByTag(pagingInformation, id);
-            var complaintViewModels = complaints.Select(c => _complaintBuilder.BuildViewModel(c)).ToList();
-            var pagedResults = new PagedList<ComplaintViewModel>(complaintViewModels, complaints.PageIndex, complaints.PageSize, complaints.TotalItemCount);
+            var pagedResults = GetPagedComplaintList(complaints);
 
             var model = new IndexViewModel()
             {
@@ -104,10 +103,8 @@ namespace Complainatron.Controllers
             }
 
             var me = FacebookService.GetMe();
-
             var complaints = _complaintService.GetComplaintsByFacebookId(pagingInformation, id);
-            var complaintViewModels = complaints.Select(c => _complaintBuilder.BuildViewModel(c)).ToList();
-            var pagedResults = new PagedList<ComplaintViewModel>(complaintViewModels, complaints.PageIndex, complaints.PageSize, complaints.TotalItemCount);
+            var pagedResults = GetPagedComplaintList(complaints);
 
             var model = new IndexViewModel()
             {
@@ -123,10 +120,8 @@ namespace Complainatron.Controllers
         public ActionResult Index(PagingInformation paging)
         {
             var me = FacebookService.GetMe();
-
             var complaints = _complaintService.PagedGetAll(paging);
-            var complaintViewModels = complaints.Select(c => _complaintBuilder.BuildViewModel(c)).ToList();
-            var pagedResults = new PagedList<ComplaintViewModel>(complaintViewModels, complaints.PageIndex, complaints.PageSize, complaints.TotalItemCount);
+            var pagedResults = GetPagedComplaintList(complaints);
 
             var model = new IndexViewModel() { 
                 Me = me,
@@ -227,6 +222,12 @@ namespace Complainatron.Controllers
 
             model.SelectedComplaintSeverityId = defaultSeverity == null ? (Guid?)null : defaultSeverity.Id;
             model.ExistingTags = tags.Select(t => _tagBuilder.BuildViewModel(t)).ToList();
+        }
+
+        private IPagedList<ComplaintViewModel> GetPagedComplaintList(IPagedList<Complaint> complaints)
+        {
+            var complaintViewModels = complaints.Select(c => _complaintBuilder.BuildViewModel(c)).ToList();
+            return new PagedList<ComplaintViewModel>(complaintViewModels, complaints.PageIndex, complaints.PageSize, complaints.TotalItemCount);
         }
     }
 }
