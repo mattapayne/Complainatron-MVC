@@ -13,5 +13,7 @@ namespace Complainatron.Core.Services
         MeDTO GetMe();
         IEnumerable<FacebookFriendDTO> GetFriends();
         void Post(string action, object args);
+        string FacebookApplicationId { get; }
+        void MarkRequestsConsumed(string requestIds);
     }
 }

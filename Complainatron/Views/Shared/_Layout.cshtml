@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@using Complainatron.HtmlHelperExtensions
+
+<!DOCTYPE html>
 <html>
 <head>
     @RenderSection("OGTags", required: false)
@@ -17,6 +19,7 @@
     <div class="main">
         <div class="container">
             @Html.FacebookSignedRequest()
+            @Html.FacebookApplicationId()
             @Html.Hidden("FriendsLink", Url.Action("Index", "Friends"))
             @Html.Hidden("ComplainLink", Url.Action("Complain", "Complaint"))
             @Html.Hidden("MapLink", Url.Action("Index", "Map"))

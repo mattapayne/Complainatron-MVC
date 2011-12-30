@@ -1,13 +1,14 @@
 ﻿@using Complainatron
-@model IEnumerable<Complainatron.Core.DTOs.FacebookFriendDTO>
+@model Complainatron.Models.FriendsIndexModel
+
 <div id="friends">
     <p>
         Here are all of your friends that are using Complainatron. To view their complaints,
         click on their picture.
     </p>
-    @if (Model.Any())
+    @if (Model.Friends.Any())
     {
-        foreach (var friend in Model)
+        foreach (var friend in Model.Friends)
         {
         <span class="friend"><a href="@Url.CanvasAction("Friend", "Complaint", new { id = friend.Id })" target="_top">
             <img src="@friend.PictureUrl" alt="Profile Picture" title="@friend.Name" /></a>
@@ -19,3 +20,7 @@
         <text>None of your friends are using Complainatron!</text>   
     }
 </div>
+<div id="invite">
+    <a href="#" id="invite-friends">Invite your friends to join facebook</a>
+</div>
+<script src="@Url.Content("~/Scripts/friends/invite.js")" type="text/javascript"></script>

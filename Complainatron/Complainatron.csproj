@@ -115,11 +115,13 @@
     </Compile>
     <Compile Include="Helpers\FacebookHelper.cs" />
     <Compile Include="HtmlHelperExtensions\FacebookPager.cs" />
+    <Compile Include="HtmlHelperExtensions\HtmlHelperExtensions.cs" />
     <Compile Include="HtmlHelperExtensions\PagingExtensions.cs" />
     <Compile Include="Models\ChartModel.cs" />
     <Compile Include="Models\ComplaintSeverityViewModel.cs" />
     <Compile Include="Models\ComplaintViewModel.cs" />
     <Compile Include="Models\CreateComplaintViewModel.cs" />
+    <Compile Include="Models\FriendsIndexModel.cs" />
     <Compile Include="Models\IndexViewModel.cs" />
     <Compile Include="Models\MapModel.cs" />
     <Compile Include="Models\TagViewModel.cs" />
@@ -152,6 +154,7 @@
     <Content Include="Content\Images\loading.gif" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\complaint\complain.js" />
+    <Content Include="Scripts\friends\invite.js" />
     <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.5.1.js" />
     <Content Include="Scripts\jquery-1.5.1.min.js" />
@@ -194,7 +197,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Scripts\map\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

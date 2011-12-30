@@ -117,9 +117,15 @@ namespace Complainatron.Controllers
             return View("Index", model);
         }
 
-        public ActionResult Index(PagingInformation paging)
+        public ActionResult Index(PagingInformation paging, string request_ids = null)
         {
             var me = FacebookService.GetMe();
+
+            if (!String.IsNullOrEmpty(request_ids))
+            {
+                FacebookService.MarkRequestsConsumed(request_ids);
+            }
+
             var complaints = _complaintService.PagedGetAll(paging);
             var pagedResults = GetPagedComplaintList(complaints);
 

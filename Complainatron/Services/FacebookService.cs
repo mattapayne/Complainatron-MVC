@@ -82,5 +82,24 @@ namespace Complainatron.Services
                 return _facebookWebClient;
             }
         }
+
+
+        public string FacebookApplicationId
+        {
+            get
+            {
+                return FacebookWebContext.Current.Settings.AppId;
+            }
+        }
+
+        public void MarkRequestsConsumed(string requestId)
+        {
+            if (String.IsNullOrEmpty(requestId))
+            {
+                return;
+            }
+
+            FbClient.Delete(String.Format("{0}_{1}", requestId, FacebookWebContext.Current.UserId));
+        }
     }
 }

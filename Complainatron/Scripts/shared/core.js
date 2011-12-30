@@ -151,3 +151,14 @@ $.extend({
     }
 });
 
+var applicationId = $("#FacebookApplicationId").val();
+
+if (applicationId) {
+    FB.init({
+        appId: applicationId,
+        status: true,
+        cookie: true,
+        oauth: true
+    });
+}
+

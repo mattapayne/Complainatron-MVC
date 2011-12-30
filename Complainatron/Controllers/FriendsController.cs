@@ -1,5 +1,6 @@
 ﻿using System.Web.Mvc;
 using Complainatron.Core.Services;
+using Complainatron.Models;
 
 namespace Complainatron.Controllers
 {
@@ -15,7 +16,8 @@ namespace Complainatron.Controllers
         public ActionResult Index()
         {
             var friends = FacebookService.GetFriends();
-            return PartialView("_Index", friends);
+            var model = new FriendsIndexModel() { Friends = friends };
+            return PartialView("_Index", model);
         }
     }
 }
