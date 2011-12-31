@@ -154,7 +154,6 @@
     <Content Include="Content\Images\loading.gif" />
     <Content Include="Global.asax" />
     <Content Include="Scripts\complaint\complain.js" />
-    <Content Include="Scripts\friends\invite.js" />
     <Content Include="Scripts\jquery-1.5.1-vsdoc.js" />
     <Content Include="Scripts\jquery-1.5.1.js" />
     <Content Include="Scripts\jquery-1.5.1.min.js" />

@@ -1,15 +1,26 @@
 ﻿window.fbAsyncInit = function () {
     FB.Canvas.setAutoResize();
+
+    var applicationId = $("#FacebookApplicationId").val();
+
+    if (applicationId) {
+        FB.init({
+            appId: applicationId,
+            status: true,
+            cookie: true,
+            oauth: true
+        });
+    }
 };
 
 $(function () {
 
     var aboutLink = $("#AboutLink").val();
     var complainLink = $("#ComplainLink").val();
-    var friendsLink = $("#FriendsLink").val();
     var signed_request = $("input#signed_request").val();
     var chartLink = $("#ChartLink").val() + "?signed_request=" + signed_request;
     var mapLink = $("#MapLink").val() + "?signed_request=" + signed_request;
+    var friendsLink = $("#FriendsLink").val() + "?signed_request=" + signed_request;
 
     $("#map").click(function (e) {
         e.preventDefault();
@@ -19,7 +30,7 @@ $(function () {
 
         buttons["Close"] = function () {
             $.hideLoading();
-            $(this).dialog("close");
+            $(this).dialog("destroy");
         };
 
         var iframe = $("<iframe />");
@@ -34,7 +45,7 @@ $(function () {
 
         buttons["Close"] = function () {
             $.hideLoading();
-            $(this).dialog("close");
+            $(this).dialog("destroy");
         };
 
         var iframe = $("<iframe />");
@@ -89,16 +100,25 @@ $(function () {
     $("#friends").click(function (e) {
         e.preventDefault();
         $.showLoading();
-        $.get(friendsLink, { 'signed_request': signed_request }, function (data) {
+        $.get(friendsLink, null, function (data) {
 
             var buttons = {};
 
             buttons["Close"] = function () {
                 $.hideLoading();
-                $(this).dialog("close");
+                $(this).dialog("destroy");
             };
 
-            $.modalDialog("Friends Using Complainatron", data, null, null, buttons, null);
+            $.modalDialog("Friends Using Complainatron", data, null, null, buttons, function () {
+                $(this).find("#invite-friends").click(function (evt) {
+                    evt.preventDefault();
+                    FB.ui({
+                        method: 'apprequests',
+                        message: 'Join Complainatron',
+                        filters: ['app_non_users']
+                    }, null);
+                });
+            });
         });
     });
 
@@ -112,7 +132,7 @@ $(function () {
 
             buttons["Close"] = function () {
                 $.hideLoading();
-                $(this).dialog("close");
+                $(this).dialog("destroy");
             };
 
             $.modalDialog("About Complainatron", data, null, null, buttons, null);
@@ -121,11 +141,12 @@ $(function () {
 });
 
 $.extend({
-    modalDialog: function (title, html, height, width, buttons) {
+    modalDialog: function (title, html, height, width, buttons, openCallback) {
 
         var h = height != null ? height : 500;
         var w = width != null ? width : 500;
         var t = title != null ? title : "Dialog";
+        var callBack = openCallback != null ? openCallback : function () { };
 
         $.hideLoading();
 
@@ -133,7 +154,8 @@ $.extend({
             title: t,
             height: h,
             width: h,
-            buttons: buttons
+            buttons: buttons,
+            open: openCallback
         }).show();
     }
 });
@@ -150,15 +172,4 @@ $.extend({
         $(document.body).unmask();
     }
 });
-
-var applicationId = $("#FacebookApplicationId").val();
-
-if (applicationId) {
-    FB.init({
-        appId: applicationId,
-        status: true,
-        cookie: true,
-        oauth: true
-    });
-}
 
