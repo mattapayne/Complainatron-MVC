@@ -330,7 +330,7 @@ namespace Tests.Complainatron
 
         [TestMethod]
         [TestCategory("Index Action")]
-        public void It_should_ask_to_facebook_service_to_mark_requests_consumed_if_request_ids_are_present()
+        public void It_should_ask_the_facebook_service_to_mark_requests_consumed_if_request_ids_are_present()
         {
             //Arrange
             StubContext();
@@ -351,7 +351,7 @@ namespace Tests.Complainatron
 
         [TestMethod]
         [TestCategory("Index Action")]
-        public void It_should_not_ask_to_facebook_service_to_mark_requests_consumed_if_no_request_ids_are_present()
+        public void It_should_not_ask_the_facebook_service_to_mark_requests_consumed_if_no_request_ids_are_present()
         {
             //Arrange
             StubContext();
