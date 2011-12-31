@@ -4,6 +4,7 @@ using Complainatron.Filters;
 using System;
 using Complainatron.Core.Services;
 using Complainatron.Core.DTOs;
+using StructureMap;
 
 namespace Complainatron
 {
@@ -35,6 +36,9 @@ namespace Complainatron
 
             RegisterGlobalFilters(GlobalFilters.Filters);
             RegisterRoutes(RouteTable.Routes);
+
+            var container = (IContainer)IoC.Initialize();
+            DependencyResolver.SetResolver(new SmDependencyResolver(container));
         }
 
         protected void Application_EndRequest(object sender, EventArgs e)
