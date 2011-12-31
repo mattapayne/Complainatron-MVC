@@ -328,6 +328,46 @@ namespace Tests.Complainatron
             result.Should().BeOfType<ViewResult>();
         }
 
+        [TestMethod]
+        [TestCategory("Index Action")]
+        public void It_should_ask_to_facebook_service_to_mark_requests_consumed_if_request_ids_are_present()
+        {
+            //Arrange
+            StubContext();
+            var pagingInfo = TestUtilities.GetPagingInformation();
+            string request_ids = "request_ids";
+
+            IPagedList<Complaint> complaints = TestUtilities.GetPagedTestComplaints(pagingInfo);
+
+            A.CallTo(() => _complaintService.PagedGetAll(pagingInfo,
+                A<Expression<Func<Complaint, bool>>[]>.That.IsSameSequenceAs(TestUtilities.EmptyComplaintFilters()))).Returns(complaints);
+
+            //Act
+            _controller.Index(pagingInfo, request_ids);
+
+            //Assert
+            A.CallTo(() => _facebookService.MarkRequestsConsumed(request_ids)).MustHaveHappened(Repeated.Exactly.Once);
+        }
+
+        [TestMethod]
+        [TestCategory("Index Action")]
+        public void It_should_not_ask_to_facebook_service_to_mark_requests_consumed_if_no_request_ids_are_present()
+        {
+            //Arrange
+            StubContext();
+            var pagingInfo = TestUtilities.GetPagingInformation();
+
+            IPagedList<Complaint> complaints = TestUtilities.GetPagedTestComplaints(pagingInfo);
+
+            A.CallTo(() => _complaintService.PagedGetAll(pagingInfo,
+                A<Expression<Func<Complaint, bool>>[]>.That.IsSameSequenceAs(TestUtilities.EmptyComplaintFilters()))).Returns(complaints);
+
+            //Act
+            _controller.Index(pagingInfo);
+
+            //Assert
+            A.CallTo(() => _facebookService.MarkRequestsConsumed(A<string>.Ignored)).MustNotHaveHappened();
+        }
 
         [TestMethod]
         [TestCategory("Index Action")]

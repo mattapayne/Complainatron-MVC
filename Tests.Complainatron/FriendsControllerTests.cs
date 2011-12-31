@@ -9,6 +9,7 @@ using FakeItEasy;
 using System.Web.Mvc;
 using FluentAssertions;
 using FluentAssertions.Assertions;
+using Complainatron.Models;
 
 namespace Tests.Complainatron
 {
@@ -71,7 +72,10 @@ namespace Tests.Complainatron
             var result = _controller.Index() as PartialViewResult;
             
             //Assert
-            result.Model.Should().BeSameAs(friends);
+            var model = result.Model;
+            model.Should().BeOfType<FriendsIndexModel>();
+            FriendsIndexModel viewModel = model as FriendsIndexModel;
+            viewModel.Friends.Should().Equal(friends);
         }
     }
 }
