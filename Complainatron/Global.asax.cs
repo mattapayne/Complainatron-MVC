@@ -39,6 +39,10 @@ namespace Complainatron
 
             var container = (IContainer)IoC.Initialize();
             DependencyResolver.SetResolver(new SmDependencyResolver(container));
+
+            var logger = container.GetInstance<ILogService>();
+
+            logger.Create(new Domain.Log() { DateCreated = DateTime.UtcNow, Id = Guid.NewGuid(), Message = "Starting ..." });
         }
 
         protected void Application_EndRequest(object sender, EventArgs e)
